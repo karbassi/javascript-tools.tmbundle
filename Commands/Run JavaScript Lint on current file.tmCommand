@@ -17,7 +17,7 @@ html_footer
 	<key>keyEquivalent</key>
 	<string>^V</string>
 	<key>name</key>
-	<string>Validate Syntax using JSLint</string>
+	<string>Validate Syntax using JavaScript Lint</string>
 	<key>output</key>
 	<string>showAsHTML</string>
 	<key>scope</key>
