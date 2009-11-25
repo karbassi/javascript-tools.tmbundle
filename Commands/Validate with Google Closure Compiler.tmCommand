@@ -5,20 +5,24 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>"${TM_RUBY:-ruby}" "$TM_BUNDLE_SUPPORT/bin/jsmin.rb"</string>
+	<string>. "$TM_SUPPORT_PATH/lib/webpreview.sh"
+html_header "Validate Javascript"
+"${TM_RUBY:-ruby}" "$TM_BUNDLE_SUPPORT/bin/lint-gcc.rb"
+html_footer
+</string>
 	<key>fallbackInput</key>
 	<string>scope</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>keyEquivalent</key>
-	<string>^@c</string>
+	<string>^V</string>
 	<key>name</key>
-	<string>Compress with JSMin</string>
+	<string>Validate with Google Closure Compiler</string>
 	<key>output</key>
-	<string>replaceSelectedText</string>
+	<string>showAsHTML</string>
 	<key>scope</key>
 	<string>source.js -entity.name.tag.script.html</string>
 	<key>uuid</key>
-	<string>D3210BEC-4A3A-4FA9-8D7C-1A0F8065CFF5</string>
+	<string>88D4CEE6-2D1F-4B65-A04D-F4ABBC8F9145</string>
 </dict>
 </plist>
